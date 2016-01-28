@@ -10,10 +10,9 @@
 		3B5CBE841C592210006F7FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CBE831C592210006F7FF8 /* AppDelegate.swift */; };
 		3B5CBE861C592210006F7FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CBE851C592210006F7FF8 /* ViewController.swift */; };
 		3B5CBE891C592210006F7FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5CBE871C592210006F7FF8 /* Main.storyboard */; };
-		3B5CBE8B1C592210006F7FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5CBE8A1C592210006F7FF8 /* Assets.xcassets */; };
-		3B5CBE8E1C592210006F7FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5CBE8C1C592210006F7FF8 /* LaunchScreen.storyboard */; };
 		3B5CBE991C592210006F7FF8 /* SwiftWeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CBE981C592210006F7FF8 /* SwiftWeiBoTests.swift */; };
 		3B5CBEA41C592210006F7FF8 /* SwiftWeiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CBEA31C592210006F7FF8 /* SwiftWeiBoUITests.swift */; };
+		3BCBC1501C59B81000A14794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBC14F1C59B81000A14794 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +37,6 @@
 		3B5CBE831C592210006F7FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B5CBE851C592210006F7FF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B5CBE881C592210006F7FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B5CBE8A1C592210006F7FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B5CBE8D1C592210006F7FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5CBE8F1C592210006F7FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5CBE941C592210006F7FF8 /* SwiftWeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5CBE981C592210006F7FF8 /* SwiftWeiBoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWeiBoTests.swift; sourceTree = "<group>"; };
@@ -47,6 +44,7 @@
 		3B5CBE9F1C592210006F7FF8 /* SwiftWeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5CBEA31C592210006F7FF8 /* SwiftWeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWeiBoUITests.swift; sourceTree = "<group>"; };
 		3B5CBEA51C592210006F7FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCBC14F1C59B81000A14794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +98,7 @@
 				3B5CBE831C592210006F7FF8 /* AppDelegate.swift */,
 				3B5CBE851C592210006F7FF8 /* ViewController.swift */,
 				3B5CBE871C592210006F7FF8 /* Main.storyboard */,
-				3B5CBE8A1C592210006F7FF8 /* Assets.xcassets */,
-				3B5CBE8C1C592210006F7FF8 /* LaunchScreen.storyboard */,
+				3BCBC14F1C59B81000A14794 /* Assets.xcassets */,
 				3B5CBE8F1C592210006F7FF8 /* Info.plist */,
 			);
 			path = SwiftWeiBo;
@@ -232,8 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5CBE8E1C592210006F7FF8 /* LaunchScreen.storyboard in Resources */,
-				3B5CBE8B1C592210006F7FF8 /* Assets.xcassets in Resources */,
+				3BCBC1501C59B81000A14794 /* Assets.xcassets in Resources */,
 				3B5CBE891C592210006F7FF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,14 +298,6 @@
 				3B5CBE881C592210006F7FF8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3B5CBE8C1C592210006F7FF8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B5CBE8D1C592210006F7FF8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,7 +388,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashaj.SwiftWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,7 +401,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashaj.SwiftWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +477,7 @@
 				3B5CBEAA1C592210006F7FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B5CBEAB1C592210006F7FF8 /* Build configuration list for PBXNativeTarget "SwiftWeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +486,7 @@
 				3B5CBEAD1C592210006F7FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B5CBEAE1C592210006F7FF8 /* Build configuration list for PBXNativeTarget "SwiftWeiBoUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +495,7 @@
 				3B5CBEB01C592210006F7FF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
