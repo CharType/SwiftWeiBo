@@ -16,6 +16,8 @@
 		3BCBC1601C59C21F00A14794 /* DisCoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC15F1C59C21F00A14794 /* DisCoverTableViewController.swift */; };
 		3BCBC1621C59C25300A14794 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1611C59C25300A14794 /* MessageTableViewController.swift */; };
 		3BCBC1641C59C26800A14794 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1631C59C26800A14794 /* ProfileTableViewController.swift */; };
+		3BCBC1681C59F15900A14794 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBC1661C59F15900A14794 /* MainVCSettings.json */; };
+		3BCBC1691C59F15900A14794 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1671C59F15900A14794 /* NullViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3BCBC15F1C59C21F00A14794 /* DisCoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisCoverTableViewController.swift; sourceTree = "<group>"; };
 		3BCBC1611C59C25300A14794 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		3BCBC1631C59C26800A14794 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		3BCBC1661C59F15900A14794 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		3BCBC1671C59F15900A14794 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				3BCBC15B1C59C13F00A14794 /* MainTabBarViewController.swift */,
+				3BCBC1651C59F15900A14794 /* Resource */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -194,6 +199,15 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		3BCBC1651C59F15900A14794 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3BCBC1661C59F15900A14794 /* MainVCSettings.json */,
+				3BCBC1671C59F15900A14794 /* NullViewController.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCBC1681C59F15900A14794 /* MainVCSettings.json in Resources */,
 				3BCBC1501C59B81000A14794 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +349,7 @@
 				3BCBC1601C59C21F00A14794 /* DisCoverTableViewController.swift in Sources */,
 				3BCBC1621C59C25300A14794 /* MessageTableViewController.swift in Sources */,
 				3B5CBE841C592210006F7FF8 /* AppDelegate.swift in Sources */,
+				3BCBC1691C59F15900A14794 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
