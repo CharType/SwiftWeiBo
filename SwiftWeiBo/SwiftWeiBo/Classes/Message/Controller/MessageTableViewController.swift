@@ -1,5 +1,5 @@
 //
-//  ProfileTableViewController.swift
+//  MessageTableViewController.swift
 //  SwiftWeiBo
 //
 //  Created by 程倩 on 16/1/28.
@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
-class ProfileTableViewController: UITableViewController {
+class MessageTableViewController: BaseTableViewController {
 
 }

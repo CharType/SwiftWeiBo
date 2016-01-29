@@ -7,6 +7,6 @@
 //
 
 import UIKit
-class DisCoverTableViewController: UITableViewController {
+class DisCoverTableViewController: BaseTableViewController {
 
 }

@@ -1,5 +1,5 @@
 //
-//  MessageTableViewController.swift
+//  HomeTableViewController.swift
 //  SwiftWeiBo
 //
 //  Created by 程倩 on 16/1/28.
@@ -7,6 +7,6 @@
 //
 
 import UIKit
-class MessageTableViewController: UITableViewController {
+class HomeTableViewController: BaseTableViewController {
 
 }
