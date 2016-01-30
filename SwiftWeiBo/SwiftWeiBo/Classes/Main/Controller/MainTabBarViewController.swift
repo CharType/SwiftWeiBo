@@ -49,7 +49,7 @@ class MainTabBarViewController: UITabBarController {
      * 添加控制器
      */
     func addChildViewControllers(){
-        tabBar.tintColor = UIColor.orangeColor()
+       
         // 1.获取json文件路径
         let path = NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil)
         // 2.通过文件路径创建NSData
