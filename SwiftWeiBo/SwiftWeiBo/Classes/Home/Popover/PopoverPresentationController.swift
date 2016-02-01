@@ -24,44 +24,41 @@ class PopoverPresentationController: UIPresentationController {
      */
     override init(presentedViewController: UIViewController, presentingViewController: UIViewController) {
         super.init(presentedViewController: presentedViewController, presentingViewController: presentingViewController)
-
-        
-        
     }
     
     /**
-     *即将布局转场子视图的时候调用
+     即将布局转场子视图时调用
      */
-    override func containerViewDidLayoutSubviews() {
-      
+    override func containerViewWillLayoutSubviews()
+    {
         // 1.修改弹出视图的大小
-        if presentFrame == CGRectZero {
-          presentedView()?.frame = CGRect(x: 100, y: 56, width: 200, height: 200)
-        }else{
-          presentedView()?.frame = presentFrame
-        
+        if presentFrame == CGRectZero{
+            
+            presentedView()?.frame = CGRect(x: 100, y: 56, width: 200, height: 200)
+        }else
+        {
+            presentedView()?.frame = presentFrame
         }
-        // 在容器视图上添加一个蒙版，插入到展现视图的下面
+        
+        // 2.在容器视图上添加一个蒙版, 插入到展现视图的下面
         containerView?.insertSubview(coverView, atIndex: 0)
-        
-        
     }
-    //MARK: - 懒加载控件
-    private lazy var coverView : UIView = {
-      let view = UIView()
+    
+    // MARK: - 懒加载
+    private lazy var coverView: UIView = {
         // 1.创建view
+        let view = UIView()
         view.backgroundColor = UIColor(white: 0.0, alpha: 0.2)
         view.frame = UIScreen.mainScreen().bounds
         
         // 2.添加监听
         let tap = UITapGestureRecognizer(target: self, action: "close")
         view.addGestureRecognizer(tap)
-        
         return view
     }()
     
     func close(){
         // presentedViewController拿到当前弹出的控制器
-        presentedViewController.dismissViewControllerAnimated(true, completion: nil)    }
-    
+        presentedViewController.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

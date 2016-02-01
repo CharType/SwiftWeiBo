@@ -115,7 +115,7 @@ class PopoverAnimator: NSObject,UIViewControllerTransitioningDelegate,UIViewCont
             UIView.animateWithDuration(transitionDuration(transitionContext), animations: { () -> Void in
                 // 注意:由于CGFloat是不准确的, 所以如果写0.0会没有动画
                 // 压扁
-                fromView?.transform = CGAffineTransformMakeScale(1.0, 0.000001)
+                fromView?.transform = CGAffineTransformMakeScale(1.0, 0.001)
                 }, completion: { (_) -> Void in
                     // 如果不写, 可能导致一些未知错误
                     transitionContext.completeTransition(true)
