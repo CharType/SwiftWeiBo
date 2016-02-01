@@ -13,6 +13,10 @@
 		3B8FE4871C5B4510000D167E /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE4861C5B4510000D167E /* VisitorView.swift */; };
 		3B8FE48B1C5DE2B3000D167E /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE48A1C5DE2B3000D167E /* UIBarButtonItem+Category.swift */; };
 		3B8FE48D1C5DE71A000D167E /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE48C1C5DE71A000D167E /* TitleButton.swift */; };
+		3B8FE4931C5E4171000D167E /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8FE4921C5E4171000D167E /* PopoverViewController.storyboard */; };
+		3B8FE4951C5E44FF000D167E /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE4941C5E44FF000D167E /* PopoverPresentationController.swift */; };
+		3B8FE4971C5E4CEC000D167E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE4961C5E4CEC000D167E /* PopoverViewController.swift */; };
+		3B8FE4991C5E4F74000D167E /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE4981C5E4F74000D167E /* PopoverAnimator.swift */; };
 		3BCBC1501C59B81000A14794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBC14F1C59B81000A14794 /* Assets.xcassets */; };
 		3BCBC1681C59F15900A14794 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBC1661C59F15900A14794 /* MainVCSettings.json */; };
 		3BCBC1691C59F15900A14794 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1671C59F15900A14794 /* NullViewController.swift */; };
@@ -55,6 +59,10 @@
 		3B8FE4861C5B4510000D167E /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		3B8FE48A1C5DE2B3000D167E /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		3B8FE48C1C5DE71A000D167E /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		3B8FE4921C5E4171000D167E /* PopoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
+		3B8FE4941C5E44FF000D167E /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
+		3B8FE4961C5E4CEC000D167E /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		3B8FE4981C5E4F74000D167E /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 		3BCBC14F1C59B81000A14794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BCBC1661C59F15900A14794 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		3BCBC1671C59F15900A14794 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +149,17 @@
 			path = SwiftWeiBoUITests;
 			sourceTree = "<group>";
 		};
+		3B8FE48F1C5E3F31000D167E /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FE4921C5E4171000D167E /* PopoverViewController.storyboard */,
+				3B8FE4941C5E44FF000D167E /* PopoverPresentationController.swift */,
+				3B8FE4961C5E4CEC000D167E /* PopoverViewController.swift */,
+				3B8FE4981C5E4F74000D167E /* PopoverAnimator.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
 		3BCBC1511C59C02D00A14794 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +196,7 @@
 		3BCBC1541C59C02D00A14794 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3B8FE48F1C5E3F31000D167E /* Popover */,
 				3BCBC17F1C5B405800A14794 /* Controller */,
 				3BCBC1811C5B405800A14794 /* Model */,
 				3BCBC1821C5B405800A14794 /* View */,
@@ -452,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8FE4931C5E4171000D167E /* PopoverViewController.storyboard in Resources */,
 				3BCBC1681C59F15900A14794 /* MainVCSettings.json in Resources */,
 				3BCBC1501C59B81000A14794 /* Assets.xcassets in Resources */,
 			);
@@ -478,7 +499,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8FE4951C5E44FF000D167E /* PopoverPresentationController.swift in Sources */,
 				3BCBC1721C5B400500A14794 /* ProfileTableViewController.swift in Sources */,
+				3B8FE4971C5E4CEC000D167E /* PopoverViewController.swift in Sources */,
 				3BCBC1881C5B407400A14794 /* DisCoverTableViewController.swift in Sources */,
 				3BCBC16D1C5B279F00A14794 /* UIView+AutoLayout.swift in Sources */,
 				3BCBC17C1C5B403700A14794 /* BaseTableViewController.swift in Sources */,
@@ -486,6 +509,7 @@
 				3B8FE48B1C5DE2B3000D167E /* UIBarButtonItem+Category.swift in Sources */,
 				3B5CBE841C592210006F7FF8 /* AppDelegate.swift in Sources */,
 				3BCBC1831C5B405800A14794 /* HomeTableViewController.swift in Sources */,
+				3B8FE4991C5E4F74000D167E /* PopoverAnimator.swift in Sources */,
 				3B8FE4871C5B4510000D167E /* VisitorView.swift in Sources */,
 				3BCBC1771C5B401700A14794 /* MessageTableViewController.swift in Sources */,
 				3B8FE48D1C5DE71A000D167E /* TitleButton.swift in Sources */,
@@ -612,7 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftWeiBo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashaj.SwiftWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -625,7 +649,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SwiftWeiBo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashaj.SwiftWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
