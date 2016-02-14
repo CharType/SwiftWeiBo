@@ -6,10 +6,14 @@
 //  Copyright © 2016年 CQ. All rights reserved.
 //
 
+
 import XCTest
 @testable import SwiftWeiBo
 
+
 class SwiftWeiBoTests: XCTestCase {
+    
+  
     
     override func setUp() {
         super.setUp()

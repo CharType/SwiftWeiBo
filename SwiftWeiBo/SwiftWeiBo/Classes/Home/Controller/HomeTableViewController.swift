@@ -73,7 +73,11 @@ class HomeTableViewController: BaseTableViewController {
       print(__FUNCTION__)
     }
     func rightBtnClick(){
-     print(__FUNCTION__)
+        
+     let sb = UIStoryboard(name: "QRCodeViewController", bundle: nil)
+     let vc = sb.instantiateInitialViewController()
+     presentViewController(vc!, animated: true, completion: nil)
+        
     }
     
     // MARK: - 懒加载转场动画控件

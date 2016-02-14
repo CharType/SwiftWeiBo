@@ -17,6 +17,9 @@
 		3B8FE4951C5E44FF000D167E /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE4941C5E44FF000D167E /* PopoverPresentationController.swift */; };
 		3B8FE4971C5E4CEC000D167E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE4961C5E4CEC000D167E /* PopoverViewController.swift */; };
 		3B8FE4991C5E4F74000D167E /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FE4981C5E4F74000D167E /* PopoverAnimator.swift */; };
+		3BB1C19A1C6255F1001414E3 /* QRCodeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1C1971C6255F1001414E3 /* QRCodeCardViewController.swift */; };
+		3BB1C19B1C6255F1001414E3 /* QRCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB1C1981C6255F1001414E3 /* QRCodeViewController.storyboard */; };
+		3BB1C19C1C6255F1001414E3 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB1C1991C6255F1001414E3 /* QRCodeViewController.swift */; };
 		3BCBC1501C59B81000A14794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBC14F1C59B81000A14794 /* Assets.xcassets */; };
 		3BCBC1681C59F15900A14794 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BCBC1661C59F15900A14794 /* MainVCSettings.json */; };
 		3BCBC1691C59F15900A14794 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1671C59F15900A14794 /* NullViewController.swift */; };
@@ -27,6 +30,7 @@
 		3BCBC17D1C5B403700A14794 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC17A1C5B403700A14794 /* MainTabBarViewController.swift */; };
 		3BCBC1831C5B405800A14794 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1801C5B405800A14794 /* HomeTableViewController.swift */; };
 		3BCBC1881C5B407400A14794 /* DisCoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1851C5B407400A14794 /* DisCoverTableViewController.swift */; };
+		7EFBC3DD6258ABB039210254 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3F1D93885F91054DA6FE9A /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EEA8ECAF36134C6A1BD1C81 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3B5CBE801C592210006F7FF8 /* SwiftWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5CBE831C592210006F7FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B5CBE8F1C592210006F7FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +68,9 @@
 		3B8FE4941C5E44FF000D167E /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
 		3B8FE4961C5E4CEC000D167E /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		3B8FE4981C5E4F74000D167E /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		3BB1C1971C6255F1001414E3 /* QRCodeCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCardViewController.swift; sourceTree = "<group>"; };
+		3BB1C1981C6255F1001414E3 /* QRCodeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCodeViewController.storyboard; sourceTree = "<group>"; };
+		3BB1C1991C6255F1001414E3 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		3BCBC14F1C59B81000A14794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BCBC1661C59F15900A14794 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		3BCBC1671C59F15900A14794 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +81,8 @@
 		3BCBC17A1C5B403700A14794 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		3BCBC1801C5B405800A14794 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		3BCBC1851C5B407400A14794 /* DisCoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisCoverTableViewController.swift; sourceTree = "<group>"; };
+		6C0DA01D677B7313310CE20B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ED3F1D93885F91054DA6FE9A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFBC3DD6258ABB039210254 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +118,8 @@
 				3B5CBE971C592210006F7FF8 /* SwiftWeiBoTests */,
 				3B5CBEA21C592210006F7FF8 /* SwiftWeiBoUITests */,
 				3B5CBE811C592210006F7FF8 /* Products */,
+				A4F7A15C54BFFACC6BCA9D4B /* Pods */,
+				43CBC34237AA7689A5998ECB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +173,16 @@
 			path = Popover;
 			sourceTree = "<group>";
 		};
+		3BB1C1961C6255F1001414E3 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				3BB1C1971C6255F1001414E3 /* QRCodeCardViewController.swift */,
+				3BB1C1981C6255F1001414E3 /* QRCodeViewController.storyboard */,
+				3BB1C1991C6255F1001414E3 /* QRCodeViewController.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 		3BCBC1511C59C02D00A14794 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +219,7 @@
 		3BCBC1541C59C02D00A14794 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3BB1C1961C6255F1001414E3 /* QRCode */,
 				3B8FE48F1C5E3F31000D167E /* Popover */,
 				3BCBC17F1C5B405800A14794 /* Controller */,
 				3BCBC1811C5B405800A14794 /* Model */,
@@ -365,6 +389,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		43CBC34237AA7689A5998ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F1D93885F91054DA6FE9A /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4F7A15C54BFFACC6BCA9D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C0DA01D677B7313310CE20B /* Pods.debug.xcconfig */,
+				1EEA8ECAF36134C6A1BD1C81 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,9 +413,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B5CBEA81C592210006F7FF8 /* Build configuration list for PBXNativeTarget "SwiftWeiBo" */;
 			buildPhases = (
+				04DF4C717501CF05F8EF2AFC /* Check Pods Manifest.lock */,
 				3B5CBE7C1C592210006F7FF8 /* Sources */,
 				3B5CBE7D1C592210006F7FF8 /* Frameworks */,
 				3B5CBE7E1C592210006F7FF8 /* Resources */,
+				51B6560FB50D02CD9215CBB5 /* Embed Pods Frameworks */,
+				D2C1E4F5821D0D50EEEF8D67 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -475,6 +519,7 @@
 				3B8FE4931C5E4171000D167E /* PopoverViewController.storyboard in Resources */,
 				3BCBC1681C59F15900A14794 /* MainVCSettings.json in Resources */,
 				3BCBC1501C59B81000A14794 /* Assets.xcassets in Resources */,
+				3BB1C19B1C6255F1001414E3 /* QRCodeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,13 +539,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04DF4C717501CF05F8EF2AFC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		51B6560FB50D02CD9215CBB5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C1E4F5821D0D50EEEF8D67 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B5CBE7C1C592210006F7FF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB1C19A1C6255F1001414E3 /* QRCodeCardViewController.swift in Sources */,
 				3B8FE4951C5E44FF000D167E /* PopoverPresentationController.swift in Sources */,
 				3BCBC1721C5B400500A14794 /* ProfileTableViewController.swift in Sources */,
+				3BB1C19C1C6255F1001414E3 /* QRCodeViewController.swift in Sources */,
 				3B8FE4971C5E4CEC000D167E /* PopoverViewController.swift in Sources */,
 				3BCBC1881C5B407400A14794 /* DisCoverTableViewController.swift in Sources */,
 				3BCBC16D1C5B279F00A14794 /* UIView+AutoLayout.swift in Sources */,
@@ -566,7 +661,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chartype@163.com (XQF32T79PF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chartype@163.com (XQF32T79PF)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -610,7 +706,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chartype@163.com (XQF32T79PF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chartype@163.com (XQF32T79PF)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -632,9 +729,11 @@
 		};
 		3B5CBEA91C592210006F7FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0DA01D677B7313310CE20B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: chartype@163.com (XQF32T79PF)";
 				INFOPLIST_FILE = SwiftWeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -645,9 +744,12 @@
 		};
 		3B5CBEAA1C592210006F7FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EEA8ECAF36134C6A1BD1C81 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: chartype@163.com (XQF32T79PF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chartype@163.com (XQF32T79PF)";
 				INFOPLIST_FILE = SwiftWeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
