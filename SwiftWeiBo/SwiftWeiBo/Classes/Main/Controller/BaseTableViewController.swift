@@ -11,7 +11,7 @@ import UIKit
 class BaseTableViewController: UITableViewController ,VisitorViewDelegate{
     
     /// 定义变量保存时候登录
-    var userlogin:Bool = true;
+    var userlogin:Bool = false;
     var visitorView :VisitorView?
     override func loadView() {
         // 如果已经登录，创建tableview 否则创建访客视图
@@ -32,7 +32,13 @@ class BaseTableViewController: UITableViewController ,VisitorViewDelegate{
     //登录按钮代理方法
     func visitorViewLogin()
     {
-      print("点击了登录按钮")
+        // 创建登录控制器
+        let OAtuhVc = OAuthViewController()
+        // 使用导航控制器包装
+        let navVc = UINavigationController(rootViewController: OAtuhVc)
+        // modal出导航控制器
+        presentViewController(navVc, animated: true, completion: nil)
+        
     }
     // 注册按钮代理方法
     func visitorViewregister()
