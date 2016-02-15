@@ -61,15 +61,38 @@ extension OAuthViewController : UIWebViewDelegate{
         let codestr = "code="
         // query  取到url后面的所有的参数
         if ((request.URL!.query?.hasPrefix(codestr)) != nil){
-           print("授权成功")
+             print("授权成功")
+            // 1.取出已经授权的RequestToken
             let code = request.URL!.query?.substringFromIndex(codestr.endIndex)
-            print(code)
+     
+            // 2.换取AccessToken
+            loadAccessToken(code!)
+        
         }else{
             print("取消授权")
             close()// 关闭当前界面
         }
         
       return false
+    }
+    /**
+     换取AccessToken
+     
+     - parameter code: 已经收授权的requesttoken
+     */
+    private func loadAccessToken(code:String){
+        
+        // 1.定义路径
+        let path = "oauth2/access_token"
+        
+        // 2.封装参数
+        let parame = ["client_id":Wb_App_Key,"client_secret":Wb_App_Secret,"grant_type":"authorization_code","code":code,"redirect_uri":Wb_redirect_uri]
+        
+       NetworkTools.shareNetworkTools().POST(path, parameters: parame, success: { (_, JSON) -> Void in
+          print(JSON)
+        }) { (_, error) -> Void in
+          print(error)
+        }
     }
     
 }
