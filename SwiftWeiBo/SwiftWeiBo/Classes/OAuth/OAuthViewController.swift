@@ -87,9 +87,13 @@ extension OAuthViewController : UIWebViewDelegate{
         
         // 2.封装参数
         let parame = ["client_id":Wb_App_Key,"client_secret":Wb_App_Secret,"grant_type":"authorization_code","code":code,"redirect_uri":Wb_redirect_uri]
-        
+        // 发送请求得到AccessToken
        NetworkTools.shareNetworkTools().POST(path, parameters: parame, success: { (_, JSON) -> Void in
-          print(JSON)
+        
+        let account = UserAccount(dict: JSON as! [String:AnyObject])
+        
+        print(account)
+        
         }) { (_, error) -> Void in
           print(error)
         }

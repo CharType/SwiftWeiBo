@@ -32,6 +32,7 @@
 		3BCBC1881C5B407400A14794 /* DisCoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBC1851C5B407400A14794 /* DisCoverTableViewController.swift */; };
 		3BEDE8D71C70C057002031B2 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEDE8D61C70C056002031B2 /* OAuthViewController.swift */; };
 		3BF955B31C71D08F00F991BB /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF955B21C71D08F00F991BB /* NetworkTools.swift */; };
+		3BF955B61C71D59400F991BB /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF955B51C71D59400F991BB /* UserAccount.swift */; };
 		7EFBC3DD6258ABB039210254 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3F1D93885F91054DA6FE9A /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		3BCBC1851C5B407400A14794 /* DisCoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisCoverTableViewController.swift; sourceTree = "<group>"; };
 		3BEDE8D61C70C056002031B2 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		3BF955B21C71D08F00F991BB /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		3BF955B51C71D59400F991BB /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		6C0DA01D677B7313310CE20B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ED3F1D93885F91054DA6FE9A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -398,9 +400,18 @@
 		3BEDE8D51C70C016002031B2 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
+				3BF955B41C71D57500F991BB /* Model */,
 				3BEDE8D61C70C056002031B2 /* OAuthViewController.swift */,
 			);
 			path = OAuth;
+			sourceTree = "<group>";
+		};
+		3BF955B41C71D57500F991BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BF955B51C71D59400F991BB /* UserAccount.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		43CBC34237AA7689A5998ECB /* Frameworks */ = {
@@ -610,6 +621,7 @@
 				3B8FE4951C5E44FF000D167E /* PopoverPresentationController.swift in Sources */,
 				3BCBC1721C5B400500A14794 /* ProfileTableViewController.swift in Sources */,
 				3BB1C19C1C6255F1001414E3 /* QRCodeViewController.swift in Sources */,
+				3BF955B61C71D59400F991BB /* UserAccount.swift in Sources */,
 				3B8FE4971C5E4CEC000D167E /* PopoverViewController.swift in Sources */,
 				3BF955B31C71D08F00F991BB /* NetworkTools.swift in Sources */,
 				3BCBC1881C5B407400A14794 /* DisCoverTableViewController.swift in Sources */,
