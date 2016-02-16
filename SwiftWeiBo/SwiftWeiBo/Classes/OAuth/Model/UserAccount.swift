@@ -10,7 +10,7 @@ import UIKit
 
 
 // Swift2.0 打印对象需要重写CustomStringConvertible协议中的description
-class UserAccount: NSObject {
+class UserAccount: NSObject,NSCoding {
   
     var access_token : String?
     
@@ -31,6 +31,37 @@ class UserAccount: NSObject {
         
     }
     
+    // MARK: - 返回用户是否登录
+    class func userlogin() -> Bool {
+        return UserAccount.loadAccount() != nil
+    }
+    
+    // MARK: - 保存授权模型
+    func saveAccount(){
+    
+        NSKeyedArchiver.archiveRootObject(self, toFile: "Acount.plist".cacheDir())
+    }
+    
+    
+ 
+    
+
+    // MARK: - 加载授权模型
+    static var account:UserAccount?
+    class func loadAccount() ->UserAccount? {
+      //1.判断是否已经加载过
+        if account != nil {
+           return account
+        }
+        
+        // 加载授权模型
+        account =  NSKeyedUnarchiver.unarchiveObjectWithFile("Acount.plist".cacheDir()) as? UserAccount
+        return account
+    }
+    
+    
+    
+     // MARK: - 打印对象数据调用方法  Swift2.0 打印对象需要重写CustomStringConvertible协议中的description
     override var description:String{
         
         // 定义属性数组
@@ -39,5 +70,21 @@ class UserAccount: NSObject {
         let dict =  self.dictionaryWithValuesForKeys(properties)
         
       return "\(dict)"
+    }
+    
+    // MARK: - NSCoding协议方法
+    func encodeWithCoder(aCoder: NSCoder){
+    
+      aCoder.encodeObject(access_token, forKey: "access_token")
+      aCoder.encodeObject(expires_in, forKey: "expires_in")
+      aCoder.encodeObject(uid, forKey: "uid")
+        
+    }
+    required init?(coder aDecoder: NSCoder){
+     
+        access_token =  aDecoder.decodeObjectForKey("access_token") as? String
+        expires_in = aDecoder.decodeObjectForKey("expires_in") as? NSNumber
+        uid = aDecoder.decodeObjectForKey("uid") as? String
+    
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 class BaseTableViewController: UITableViewController ,VisitorViewDelegate{
     
     /// 定义变量保存时候登录
-    var userlogin:Bool = false;
+    var userlogin:Bool = UserAccount.userlogin();
     var visitorView :VisitorView?
     override func loadView() {
         // 如果已经登录，创建tableview 否则创建访客视图

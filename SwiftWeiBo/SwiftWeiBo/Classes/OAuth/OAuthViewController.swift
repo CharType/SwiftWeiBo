@@ -91,8 +91,7 @@ extension OAuthViewController : UIWebViewDelegate{
        NetworkTools.shareNetworkTools().POST(path, parameters: parame, success: { (_, JSON) -> Void in
         
         let account = UserAccount(dict: JSON as! [String:AnyObject])
-        
-        print(account)
+        account.saveAccount()
         
         }) { (_, error) -> Void in
           print(error)
