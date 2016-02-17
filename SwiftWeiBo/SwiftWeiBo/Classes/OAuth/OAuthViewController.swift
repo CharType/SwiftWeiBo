@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class OAuthViewController: UIViewController {
 
@@ -75,6 +76,19 @@ extension OAuthViewController : UIWebViewDelegate{
         
       return false
     }
+    
+    
+    func webViewDidStartLoad(webView: UIWebView){
+      SVProgressHUD.showInfoWithStatus("正在加载...", maskType: SVProgressHUDMaskType.Black)
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView){
+        SVProgressHUD.dismiss()
+    }
+    
+    
+    
+    
     /**
      换取AccessToken
      
